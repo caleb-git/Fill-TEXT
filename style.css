@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    border: 5px solid blue;
+}
+
+body h2{
+    font-size: 100px;
+    text-transform: uppercase;
+    font-style:normal;
+    color: grey;
+    position: relative;
+}
+
+h2:before{
+    content: "text";
+    font-size: 100px;
+    text-transform: uppercase;
+    font-style:normal;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    overflow: hidden;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+h2:hover:before{
+    width: 100%;
+}
